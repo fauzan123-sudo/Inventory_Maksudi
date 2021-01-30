@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Goodang</string>
+    <string name="username">Username</string>
+    <string name="stok_masuk">Stok masuk</string>
+    <string name="stok_keluar">Stok Keluar</string>
+    <string name="grafik_barang">Grafik Barang</string>
+    <string name="list_barang">List Barang</string>
+    <string name="logout">Logout</string>
+    <string name="password">Password</string>
+    <string name="login">Login</string>
+    <string name="register">Register</string>
+    <string name="hai">Hai : </string>
+
+</resources>

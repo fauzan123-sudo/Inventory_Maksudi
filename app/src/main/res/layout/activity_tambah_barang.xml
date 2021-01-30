@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.TambahBarang">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/tambahGambar"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="93dp"
+        android:src="@drawable/ic_kamera"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/jenisBarang"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:hint="Jenis Barang"
+            app:layout_constraintBottom_toTopOf="@+id/hargaBarang"
+            app:layout_constraintTop_toBottomOf="@+id/tambahGambar"
+            tools:layout_editor_absoluteX="16dp" />
+
+        <EditText
+            android:id="@+id/hargaBarang"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:hint="Harga Barang"
+            app:layout_constraintBottom_toTopOf="@+id/jumlahBarang"
+            app:layout_constraintTop_toBottomOf="@+id/jenisBarang"
+            tools:layout_editor_absoluteX="0dp" />
+
+        <TextView
+            android:id="@+id/tanggal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:text="Tanggal"
+            android:textSize="17sp"
+            android:drawablePadding="10dp"
+            android:drawableLeft="@drawable/ic_calendar"
+            app:layout_constraintBottom_toTopOf="@+id/scanBarcode"
+            app:layout_constraintTop_toBottomOf="@+id/jumlahBarang"
+            app:layout_constraintVertical_bias="0.0"
+            tools:layout_editor_absoluteX="0dp" />
+
+        <EditText
+            android:id="@+id/jumlahBarang"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:hint="Jumlah Barang"
+            app:layout_constraintBottom_toTopOf="@+id/tanggal"
+            app:layout_constraintTop_toBottomOf="@+id/hargaBarang" />
+
+        <TextView
+            android:id="@+id/scanBarcode"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:drawableStart="@drawable/ic_barcode"
+            android:drawableLeft="@drawable/ic_barcode"
+            android:drawablePadding="10dp"
+            android:textSize="17sp"
+            android:hint="Barcode"
+            app:drawableLeftCompat="@drawable/ic_barcode"
+            app:drawableStartCompat="@drawable/ic_barcode"
+            app:layout_constraintBottom_toTopOf="@+id/simpan"
+            app:layout_constraintTop_toBottomOf="@+id/tanggal" />
+
+        <Button
+            android:id="@+id/simpan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="24dp"
+            android:text="Simpan"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/scanBarcode" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.core.widget.NestedScrollView>
